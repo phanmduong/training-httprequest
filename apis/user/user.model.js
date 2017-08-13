@@ -24,7 +24,7 @@ var user = mongoose.Schema({
         type: String,
         required: true,
     },
-    dob: {
+    dateUpdate: {
         type: String,
         required: true
     },

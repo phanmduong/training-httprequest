@@ -10,12 +10,12 @@ module.exports = {
 
         try {
             var newUser = new User({
-                author: req.body.username.toLowerCase(),
-                shortDes: req.body.password,
-                longDes: req.body.name,
-                type: req.body.email,
-                dob: req.body.gender,
-                imgUrl: req.body.dob,
+                author: req.body.author,
+                shortDes: req.body.shortDes,
+                longDes: req.body.longDes,
+                type: req.body.type,
+                dateUpdate: req.body.dateUpdate,
+                imgUrl: req.body.imgUrl,
                 favorite: (req.body.favorite) ? req.body.favorite : false
             });
         } catch (e) {
